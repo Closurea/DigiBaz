@@ -3,5 +3,6 @@ body {
 }
 
 div.bar {
+    text-align:center;
     color:white;
 }
