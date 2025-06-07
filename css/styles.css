@@ -1,6 +1,46 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(../src/Vazirmatn-NL-SemiBold.ttf);
+}
+
 body {
     background-color:black;
+    font-family: vazir;
 }
+
+.header {
+    background-color: #666666;
+    width:800px;
+    height: 130px;
+    color: honeydew;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.header p {
+    text-align: center;
+}
+
+span {
+    display:block;
+    text-align-last: center;
+}
+
 
 div.bar {
     text-align:center;
