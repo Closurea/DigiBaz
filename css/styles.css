@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: vazir;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(../src/Vazirmatn-NL-SemiBold.ttf);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu {
+    background-color: #dadada;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.main,
+.products,
+.blog,
+.sellers { 
+    margin-top: 13px;
+}
+
+.wishlist,
+.compare {
+    margin-top: 10px;
+}
+
+.search {
+    margin-top: 3px;
+}
+
+.tabs-container {
+    border: 2px solid red;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-items {
+    display: flex;
+    justify-content: center
+
+}
