@@ -19,28 +19,26 @@ body {
     font-family: vazir;
 }
 
-.header {
-    background-color: #666666;
-    width:800px;
-    height: 130px;
+.header-container {
+    /* background-color: #353E43; */
     color: honeydew;
-    padding: 20px;
-    margin: 10px auto;
-}
-
-.header h1 {
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
-.header p {
-    text-align: center;
+.header {
+    background-color: #353E43;
+    width: 650px;
+    height: 100px;
+    /* display: flex;
+    justify-content: center; */
 }
 
-span {
-    display:block;
-    text-align-last: center;
+.products {
+    display: flex;
+    justify-content: space-around;
 }
-
 
 div.bar {
     text-align:center;
