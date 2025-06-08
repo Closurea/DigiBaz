@@ -31,13 +31,14 @@ body {
     background-color: #353E43;
     width: 650px;
     height: 100px;
-    /* display: flex;
-    justify-content: center; */
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 .products {
     display: flex;
     justify-content: space-around;
+    margin: 15px;
 }
 
 div.bar {
