@@ -52,6 +52,7 @@
     align-items: center;
     flex-direction: column;
     margin: auto;
+    /* border: 1px solid red; */
 }
 
 .tabs-info {
@@ -63,4 +64,18 @@
     flex-direction:row-reverse;
     margin-top: 20px;
     gap: 40px;
+}
+
+.mobile-section-container {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    justify-content: center;
+}
+
+.mobile-section {
+    display: flex;
+    justify-content: flex-start;
+
 }
