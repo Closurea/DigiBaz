@@ -46,14 +46,21 @@
 }
 
 .tabs-container {
-    border: 2px solid red;
-    height: 220px;
+    height: 120px;
+    width: 1200px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.tabs-info {
+    margin-top: 13px;
 }
 
 .tab-items {
     display: flex;
-    justify-content: center
-
+    flex-direction:row-reverse;
+    margin-top: 20px;
+    gap: 40px;
 }
