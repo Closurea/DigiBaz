@@ -15,6 +15,25 @@
     src: url(../src/Vazirmatn-NL-SemiBold.ttf);
 }
 
+/* .header-container {
+    display: flex;
+    justify-content: center;
+} */
+
+.header {
+    display: flex;
+    width:1200px;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom:10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: auto auto;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+}
+
 .navbar-container {
     display: flex;
     justify-content: center;
@@ -36,7 +55,8 @@
     width: 1200px;
     margin: 0 auto;
     position: sticky;
-    top: 0;
+    /* change top to 0 if you want the other option */
+    top: 70px;
     background: transparent;
     box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
