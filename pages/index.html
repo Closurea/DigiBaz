@@ -31,12 +31,13 @@
             <div class="tabs-info">برای مشاهده جدیدترین محصولات معرفی شده دسته مورد نظر خود را انتخاب کنید</div>
             <div class="item-container">
                 <ul class="tab-items">
-                    <li><a href="#">موبایل</a></li>
+                    <li class="active"><a href="#">موبایل</a></li>
                     <li><a href="#">تبلت</a></li>
                     <li><a href="#">ایرفون و هدفون</a></li>
                     <li><a href="#">اسپیکر</a></li>
                     <li><a href="#">ساعت و مچ بند هوشمند</a></li>
                     <li><a href="#">لوازم جانبی</a></li>
+                    <span class="highlight"></span>
                 </ul>
             </div>
         </div>
@@ -47,7 +48,7 @@
                 <div class="mobile"><img src="../src/oneplus13.png" width="400px"></div>
                 <div class="mobile"><img src="../src/pixel9.png" width="400px"></div>
                 <div class="mobile"><img src="../src/redmi14.png" width="400px"></div>
-                <div class="mobile"><img src="../src/nothing2.png" width="400px"></div>
+                <div class="mobile last"><img src="../src/nothing2.png" width="400px"></div>
             </div>
         </div>
         <div class="information-section-container">
@@ -56,6 +57,37 @@
                 <p>دیجی باز شاپ یک فروشگاه تخصصی در زمینه فروش لوازم جانبی موبایل و کامپیوتر است. این فروشگاه با هدف ارائه محصولات با کیفیت و متنوع در حوزه تکنولوژی، به کاربران و مشتریان خود خدمات می‌دهد</p>
             </div>
         </div>
+        <script>
+            const tabs = document.querySelectorAll('.tab-items li');
+            const highlight = document.querySelector('.tab-items .highlight');
+
+            let activeTab = document.querySelector('.tab-items .active');
+
+            function moveHighlightToElement(el) {
+                const a = el.querySelector('a');
+                highlight.style.width = `${a.offsetWidth}px`;
+                highlight.style.left = `${a.offsetLeft}px`;
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('mouseenter', () => {
+                    moveHighlightToElement(tab);
+                });
+
+                tab.addEventListener('mouseleave', () => {
+                    if (activeTab) moveHighlightToElement(activeTab);
+                    else highlight.style.width = '0';
+                });
+
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    activeTab = tab;
+                    moveHighlightToElement(tab);
+                });
+            });
+            if (activeTab) moveHighlightToElement(activeTab);
+        </script>
     </body>
     <footer>
         <div></div>

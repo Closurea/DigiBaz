@@ -84,13 +84,14 @@ a {
 
 .tabs-container {
     height: 120px;
-    width: 1200px;
+    width: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
     /* border: 1px solid red; */
+    position: relative;
 }
 
 .tabs-info {
@@ -98,6 +99,7 @@ a {
 }
 
 .tab-items {
+    position: relative;
     display: flex;
     flex-direction:row-reverse;
     margin-top: 20px;
@@ -117,4 +119,15 @@ a {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+}
+
+.tab-items .highlight{
+    position: absolute;
+    height: 4px;
+    bottom: -4px;
+    width: 20px;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    z-index: -1;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
