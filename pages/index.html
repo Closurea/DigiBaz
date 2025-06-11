@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
-    <head lang="fa-IR">
+<html lang="fa-IR" dir="rtl">
+    <head>
         <meta charset="UTF-8">
         <title>Digibaz Shop</title>
         <link rel="icon" href="../src/favicon.png">
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-
-        <!-- <div class="header-container">
-        </div> -->
         <div class="header"><img src="../src/logo.png" width="180px"></div>
         <nav class="navbar">
             <div class="navbar-container">
@@ -51,45 +48,73 @@
                 <div class="mobile last"><img src="../src/nothing2.png" width="400px"></div>
             </div>
         </div>
+    </body>
+    <article>
         <div class="information-section-container">
             <div class="information-section">
                 <h1>دیجی باز شاپ</h1>
-                <p>دیجی باز شاپ یک فروشگاه تخصصی در زمینه فروش لوازم جانبی موبایل و کامپیوتر است. این فروشگاه با هدف ارائه محصولات با کیفیت و متنوع در حوزه تکنولوژی، به کاربران و مشتریان خود خدمات می‌دهد</p>
+                <p>دیجی باز شاپ یک فروشگاه تخصصی در زمینه فروش لوازم جانبی موبایل و کامپیوتر است. این فروشگاه با هدف ارائه
+                    محصولات با کیفیت و متنوع در حوزه تکنولوژی، به کاربران و مشتریان خود خدمات می‌دهد</p>
             </div>
         </div>
-        <script>
-            const tabs = document.querySelectorAll('.tab-items li');
-            const highlight = document.querySelector('.tab-items .highlight');
-
-            let activeTab = document.querySelector('.tab-items .active');
-
-            function moveHighlightToElement(el) {
-                const a = el.querySelector('a');
-                highlight.style.width = `${a.offsetWidth}px`;
-                highlight.style.left = `${a.offsetLeft}px`;
-            }
-
-            tabs.forEach(tab => {
-                tab.addEventListener('mouseenter', () => {
-                    moveHighlightToElement(tab);
-                });
-
-                tab.addEventListener('mouseleave', () => {
-                    if (activeTab) moveHighlightToElement(activeTab);
-                    else highlight.style.width = '0';
-                });
-
-                tab.addEventListener('click', () => {
-                    tabs.forEach(t => t.classList.remove('active'));
-                    tab.classList.add('active');
-                    activeTab = tab;
-                    moveHighlightToElement(tab);
-                });
-            });
-            if (activeTab) moveHighlightToElement(activeTab);
-        </script>
-    </body>
+    </article>
     <footer>
-        <div></div>
+        <div class="footer-container">
+            <div class="top">
+                <img src="../src/logo.png" width="180px">
+            </div>
+            <div class="middle">
+                <div class="contact-us">
+                    <p>ارتباط با ما</p>
+                    <div class="phone-num-container">
+                        <p>تلفن:</p>
+                        <span class="first-number">
+                            <a href="tel:02122222222" target="_black" class="ltr">021-22222222</a>
+                        </span>
+                        <span class="dash"> - </span>
+                        <span class="second-number">
+                            <a href="tel:02100000000" target="_blank" class="ltr">021-00000000</a>
+                        </span>
+                    </div>
+                    <div class="email-container">
+                        <p>ایمیل:</p>
+                        <span class="email">
+                            <a href="mailto:info@digibaz.shop">info@digibaz.shop</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script>
+        const tabs = document.querySelectorAll('.tab-items li');
+        const highlight = document.querySelector('.tab-items .highlight');
+
+        let activeTab = document.querySelector('.tab-items .active');
+
+        function moveHighlightToElement(el) {
+            const a = el.querySelector('a');
+            highlight.style.width = `${a.offsetWidth}px`;
+            highlight.style.left = `${a.offsetLeft}px`;
+        }
+
+        tabs.forEach(tab => {
+            tab.addEventListener('mouseenter', () => {
+                moveHighlightToElement(tab);
+            });
+
+            tab.addEventListener('mouseleave', () => {
+                if (activeTab) moveHighlightToElement(activeTab);
+                else highlight.style.width = '0';
+            });
+
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                activeTab = tab;
+                moveHighlightToElement(tab);
+            });
+        });
+        if (activeTab) moveHighlightToElement(activeTab);
+    </script>
 </html>

@@ -23,7 +23,7 @@
 .header {
     display: flex;
     width:1200px;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-top: 10px;
     margin-bottom:10px;
     position: sticky;
@@ -45,7 +45,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: row-reverse;
     list-style: none;
 }
 
@@ -55,7 +54,6 @@
     width: 1200px;
     margin: 0 auto;
     position: sticky;
-    /* change top to 0 if you want the other option */
     top: 70px;
     background: transparent;
     box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
@@ -90,7 +88,6 @@ a {
     flex-direction: column;
     margin: auto;
     margin-top: 50px;
-    /* border: 1px solid red; */
     position: relative;
 }
 
@@ -101,7 +98,6 @@ a {
 .tab-items {
     position: relative;
     display: flex;
-    flex-direction:row-reverse;
     margin-top: 20px;
     gap: 40px;
     list-style: none;
@@ -109,7 +105,6 @@ a {
 
 .mobile-section-container {
     display: flex;
-    /* border: 1px solid red; */
     width: 1200px;
     margin: auto;
     justify-content: center;
@@ -130,4 +125,25 @@ a {
     z-index: -1;
     border-radius: 2px;
     transition: all 0.3s ease;
+}
+
+.information-section-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    border-top: 1.5px solid gray;
+    width: 1500px;
+    height: 200px;
+}
+
+.information-section h1{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.3rem; 
+    font-weight: 300px;
+}
+
+.information-section p {
+    font-size: 15px;
+    font-weight: lighter;
 }
