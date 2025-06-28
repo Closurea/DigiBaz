@@ -53,7 +53,7 @@
     justify-content: center;
     width: 1200px;
     margin: 0 auto;
-    position: sticky;
+    /* position: sticky; */
     top: 70px;
     background: transparent;
     box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.5);
@@ -146,4 +146,19 @@ a {
 .information-section p {
     font-size: 15px;
     font-weight: lighter;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    background: linear-gradient(10deg, #4f1919, #ff3333);;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    display: flex;
+    width: 1890px;
+    padding-bottom: 200px;
+    margin-top: -100px;
 }
