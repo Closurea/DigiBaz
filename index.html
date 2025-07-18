@@ -21,7 +21,13 @@
         </div>
         
         <div class="header-main">
-            <div class="search-icon">🔍</div>
+            <div class="search-container">
+                <div class="search-icon" id="search-toggle">🔍</div>
+                <div class="search-bar" id="search-bar">
+                    <input type="text" id="search-input" placeholder="جستجو محصولات..." />
+                    <div id="search-results" class="search-results"></div>
+                </div>
+            </div>
             <div class="notification-badge">
                 <span class="notification-icon">🔔</span>
                 <span class="badge">2</span>
@@ -29,7 +35,81 @@
             <div class="logo">
                 <span class="logo-text">دیجی بازار</span>
             </div>
-            <div class="menu-icon">☰</div>
+            <div class="menu-icon" id="menu-toggle">☰</div>
+        </div>
+        
+        <!-- Mega Menu -->
+        <div class="mega-menu" id="mega-menu">
+            <div class="mega-menu-container">
+                <div class="menu-categories">
+                    <div class="menu-category" data-category="mobile">
+                        <div class="category-icon">📱</div>
+                        <div class="category-title">گوشی</div>
+                        <div class="category-subtitle">موبایل و گوشی هوشمند</div>
+                    </div>
+                    <div class="menu-category" data-category="tablet">
+                        <div class="category-icon">📱</div>
+                        <div class="category-title">تبلت</div>
+                        <div class="category-subtitle">تبلت و آیپد</div>
+                    </div>
+                    <div class="menu-category" data-category="laptop">
+                        <div class="category-icon">💻</div>
+                        <div class="category-title">لپتاپ</div>
+                        <div class="category-subtitle">لپتاپ و نوت بوک</div>
+                    </div>
+                    <div class="menu-category" data-category="smartwatch">
+                        <div class="category-icon">⌚</div>
+                        <div class="category-title">ساعت هوشمند</div>
+                        <div class="category-subtitle">اپل واچ و ساعت های هوشمند</div>
+                    </div>
+                    <div class="menu-category" data-category="speaker">
+                        <div class="category-icon">🔊</div>
+                        <div class="category-title">اسپیکر</div>
+                        <div class="category-subtitle">اسپیکر بلوتوث و صوتی</div>
+                    </div>
+                </div>
+                
+                <div class="menu-featured">
+                    <h3>محصولات ویژه</h3>
+                    <div class="featured-products">
+                        <div class="featured-item">
+                            <span class="featured-icon">🔥</span>
+                            <span>تخفیف ویژه گوشی سامسونگ</span>
+                        </div>
+                        <div class="featured-item">
+                            <span class="featured-icon">⚡</span>
+                            <span>جدیدترین لپتاپ های گیمینگ</span>
+                        </div>
+                        <div class="featured-item">
+                            <span class="featured-icon">🎯</span>
+                            <span>ساعت های هوشمند پرفروش</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-close" id="menu-close">✕</div>
+        </div>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="search-overlay">
+            <div class="search-overlay-content">
+                <div class="search-header">
+                    <input type="text" id="main-search-input" placeholder="جستجو در همه محصولات..." autofocus />
+                    <button class="search-close" id="search-close">✕</button>
+                </div>
+                <div class="search-suggestions">
+                    <h4>جستجوهای پرطرفدار</h4>
+                    <div class="suggestion-tags">
+                        <span class="suggestion-tag">آیفون 15</span>
+                        <span class="suggestion-tag">سامسونگ گلکسی</span>
+                        <span class="suggestion-tag">شیائومی</span>
+                        <span class="suggestion-tag">لپتاپ ایسوس</span>
+                        <span class="suggestion-tag">ایرپاد</span>
+                    </div>
+                </div>
+                <div id="main-search-results" class="main-search-results"></div>
+            </div>
         </div>
         
         <div class="price-display">
